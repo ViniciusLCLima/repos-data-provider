@@ -1,5 +1,6 @@
-import {authCode as GITHUB_API_KEY} from "./auth.js"
 import { Octokit } from "@octokit/core"
+
+const GITHUB_API_KEY = process.env.GITHUB_API_KEY
 
 const authObj = new Octokit ({
   auth: GITHUB_API_KEY
